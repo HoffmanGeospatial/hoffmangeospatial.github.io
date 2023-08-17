@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Databases &amp; Data Management - Dallas Hoffman</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1692238870" title="wsite-theme-css" />
+<link href='http://cdn2.editmysite.com/fonts/Raleway/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Lora/font.css?2' rel='stylesheet' type='text/css' />
+
+<link href='http://cdn2.editmysite.com/fonts/Muli/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Quicksand/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Journal/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Quicksand/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Yantramanav/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Playfair_Display/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Mate_SC/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Raleway/font.css?2' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Muli" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#757b7a !important;}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Quicksand" !important;text-transform:  none !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#036571 !important;}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-family:"Journal" !important;color:#1893a7 !important;font-style:normal !important;text-transform:  none !important;letter-spacing: 1px !important;}
+.wsite-menu-default a {font-family:"Montserrat" !important;font-weight:400 !important;text-transform:  uppercase !important;letter-spacing: 0px !important;}
+.wsite-menu a {font-family:"Montserrat" !important;}
+.wsite-image div, .wsite-caption {font-family:"Quicksand" !important;}
+.galleryCaptionInnerText {font-family:"Yantramanav" !important;letter-spacing: 1px !important;}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Playfair Display" !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-family:"Mate SC" !important;font-style:normal !important;letter-spacing: 1px !important;}
+.wsite-button-inner {font-family:"Raleway" !important;letter-spacing: 2px !important;}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-button-small .wsite-button-inner {font-size:9px !important;}
+.wsite-button-large .wsite-button-inner {font-size:11px !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:14px !important;line-height:18px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:30px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-size:50px !important;}
+.wsite-menu-default a {font-size:13px !important;}
+.wsite-menu a {font-size:12px !important;}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-size:60px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-size:6px !important;line-height:16px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+<style>
+.wsite-background {background-image: url("/uploads/1/2/7/3/127347023/background-images/1366250879.jpg") !important;background-repeat: no-repeat !important;background-position: 50.00% 56.12% !important;background-size: 100% !important;background-color: transparent !important;}
+body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+</style><link rel='stylesheet' type='text/css' href='http://cdn2.editmysite.com/css/old/slideshow/slideshow.css?1234' />
+
+		<script src='files/templateArtifacts.js?1682916892'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn2.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "US";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "951126548443794374";
+			com_userID = "127347023";</script><script type='text/javascript' src='http://cdn2.editmysite.com/js/old/slideshow-jq.js?buildTime=1234'></script>
+<script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"933583392413681456","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"978853055622443821","title":"ABOUT","url":"about.html","target":"","nav_menu":false,"nonclickable":false},{"id":"635103956387319766","title":"CORE COMPETENCIES","url":"core-competencies.html","target":"","nav_menu":false,"nonclickable":true},{"id":"943448049667345801","title":"CAPSTONE EXPERIENCE","url":"capstone-experience.html","target":"","nav_menu":false,"nonclickable":false},{"id":"935399979440701541","title":"PROGRAM REFLECTION","url":"program-reflection.html","target":"","nav_menu":false,"nonclickable":false}],
+			"747818816243163516",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="header-page  wsite-page-databases-data-management  full-width-on  wsite-theme-light"><div class="body-wrap">
+		<div id="header">
+			<div class="nav-trigger hamburger">
+				<div class="open-btn">
+					<span class="mobile"></span>
+					<span class="mobile"></span>
+					<span class="mobile"></span>
+				</div>
+			</div>
+			<div id="sitename"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Dallas Hoffman</span>
+	
+	</a>
+
+</span></div>
+		</div>
+
+		<div id="wrapper">
+			<div class="bg-wrapper">
+				<div id="navigation"><ul class="wsite-menu-default">
+		<li id="pg933583392413681456" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg978853055622443821" class="wsite-menu-item-wrap">
+			<a
+						href="about.html"
+				class="wsite-menu-item"
+				>
+				ABOUT
+			</a>
+			
+		</li>
+		<li id="pg635103956387319766" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				CORE COMPETENCIES
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-747818816243163516"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="databases--data-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Databases & Data Management
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-172902931652283997"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="modeling--analytics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Modeling & Analytics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-311315617201613396"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="programming.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Programming
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-999109239806804595"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="web-services.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Web Services
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg943448049667345801" class="wsite-menu-item-wrap">
+			<a
+						href="capstone-experience.html"
+				class="wsite-menu-item"
+				>
+				CAPSTONE EXPERIENCE
+			</a>
+			
+		</li>
+		<li id="pg935399979440701541" class="wsite-menu-item-wrap">
+			<a
+						href="program-reflection.html"
+				class="wsite-menu-item"
+				>
+				PROGRAM REFLECTION
+			</a>
+			
+		</li>
+</ul>
+</div>
+
+				<div class="banner-wrap">
+					<div class="wsite-elements wsite-not-footer wsite-header-elements">
+	<div class="wsite-section-wrap">
+	<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="vertical-align: middle;height: auto;background-image: url(&quot;/uploads/1/2/7/3/127347023/background-images/1686656141.jpg&quot;) ;background-repeat: no-repeat ;background-position: 50% 50% ;background-size: 120% ;background-color: transparent ;background-size: 120%;" >
+		<div class="wsite-section-content">
+			
+						<div id="banner">
+							<div id="banner-container">
+				<div class="wsite-section-elements">
+					<div class="paragraph"><font size="5">Databases &amp; Data Management</font></div>
+				</div>
+			</div>
+						</div>
+					
+		</div>
+		<div class=""></div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+				<div id="content-wrapper">
+					<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-42 wsite-custom-background" style="background-color: #e6e6e6;background-image: none;is_customized: 1;" >
+		<div class="wsite-section-content">
+						<div class="container">
+			<div class="wsite-section-elements">
+				<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:23.460721868365%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/2/7/3/127347023/ucgis-logo_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:76.539278131635%; padding:0 15px;">
+					
+						
+
+<blockquote><font color="#818181" size="3"><em>Data management involves the theories and techniques for managing the entire data lifecycle, from data collection to data format conversion, from data storage to data sharing and retrieval, to data provenance, data quality control and data curation for long-term data archival and preservation.</em></font><br /><br /><font size="3" style="color:rgb(255, 250, 250)"><span style="color:rgb(108, 108, 108)">Quinn, S. (2018). Web GIS.&nbsp;</span><em style="color:rgb(108, 108, 108)"><a href="https://gistbok.ucgis.org/all-topics?term_node_tid_depth=95" target="_blank">The Geographic Information Science &amp; Technology Body of Knowledge</a></em><span style="color:rgb(108, 108, 108)">&nbsp;(1st Quarter 2018 Edition), John P. Wilson (ed).</span></font></blockquote>
+
+<div class="wsite-spacer" style="height:58px;"></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<h2 class="wsite-content-title" style="text-align:left;">Entity-Relationship (E-R) Diagrams &amp;<br />Developing PostgreSQL Enterprise Databases</h2>
+
+<div class="paragraph"><strong><font size="4">Description</font></strong></div>
+
+<div class="paragraph"><font color="#818181">Objectives:</font><ul><li><font color="#818181">Understand concepts of conceptual and logical database design, Entity-Relationship, and Unified Modeling Language (UML) diagrams;</font></li><li><font color="#818181">Understand the purpose and structure of Data Definition Language (DDL); and</font></li><li><font color="#818181">Create and populate a PostgreSQL relational database</font></li></ul> <font color="#818181">This project required developing an Entity-Relationship diagram based on the National Park Service fish inventory.&nbsp;The diagram needed to include: a) Entities, b) attributes for each entity and special characteristics associated with each attribute (i.e. primary key or multi-valued), c) relationships and cardinalities, and d) a legend.<br />Then, it was necessary to create a UML diagram based on the E-R diagram, create Data Definition Language (DDL) statements based on the UML diagram, create a PostgreSQL database using DDL statements, and lastly, populate database.&nbsp;</font></div>
+
+<div class="paragraph"><font size="4"><strong>Analysis Procedures</strong></font></div>
+
+<div class="paragraph"><font color="#818181">The processes for achieving the objectives of this project comprised, first and foremost, a significant attention to detail. This is due to the nature of the project being characterized by numerous points of data, specific attributes, and connecting relationships amongst groups of data amongst tables. It was imperative to organize all of these facets such that the database was free of errors and any users/consumers/connecting entities to the underlying data would not experience issues in functionality.</font></div>
+
+<div class="paragraph"><font size="4"><strong>Results</strong></font></div>
+
+<div class="paragraph"><font color="#818181">&#8203;words go here eventually<br /></font></div>
+
+<div class="paragraph"><font size="4"><strong>Reflection</strong></font></div>
+
+<div class="paragraph"><font color="#818181">The complexity of this assignment served as a test of my organizational and attentiveness skills. I enjoyed the diagram design portion because not only having, but actively working to <em>create</em> the visuals undoubtedly contributes to better comprehension of the pieces that make the whole. Though this assignment was not my first experience with RDMS database design - I have previously in my professional GIS career builtout extensibly large, interconnected databases and with UI design in MS Access - it was my first exposure to free, open-source, server-based RDMS, pgAdmin.&nbsp;<br /><br />&#8203;</font><br /></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:22.625078776532%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:51.47581564728%; padding:0 15px;">
+					
+						
+
+<div id="885158638310565141"><div><style type="text/css">
+	#element-baf4e9e5-1ae8-4715-9252-0a3101ac6e76 .content-color-box-wrapper {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(57,150,184,0.3);
+  border-style: None;
+  border-color: #555555;
+  border-width: 3px;
+}
+
+</style><div id="element-baf4e9e5-1ae8-4715-9252-0a3101ac6e76" data-platform-element-id="698263678581730663-1.1.0" class="platform-element-contents">
+<div class="content-color-box-wrapper">
+<div style="width: 100%"><div></div><div class="paragraph" style="text-align:center;"><strong><font color="#24678d">TAGS:&nbsp;&nbsp;</font></strong><font color="#24678d">SQL, ER, DDL, UML, RDMS, DB Admin</font></div></div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement885158638310565141() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "698263678581730663-1.1.0";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = PlatformElement.extend({initialize:function(options){},events:{}});;
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"spacingSize_each":[{"spacingSize_index":0},{"spacingSize_index":1},{"spacingSize_index":2},{"spacingSize_index":3},{"spacingSize_index":4}],"cornerRadius_each":[{"cornerRadius_index":0},{"cornerRadius_index":1},{"cornerRadius_index":2},{"cornerRadius_index":3},{"cornerRadius_index":4}],"borderWidth_each":[{"borderWidth_index":0},{"borderWidth_index":1},{"borderWidth_index":2}],"backgroundColor":"#3996B8","backgroundTransparency":30,"spacingSize":5,"cornerRadius":5,"borderStyle":"None","borderColor":"#555","borderWidth":3,"borderTransparency":100});
+			_Element.prototype.settings.page_element_id = "885158638310565141";
+
+			_Element.prototype.element_id = "baf4e9e5-1ae8-4715-9252-0a3101ac6e76";
+			_Element.prototype.user_id = "127347023";
+			_Element.prototype.site_id = "951126548443794374";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-698263678581730663-1.1.0/assets/";
+			new _Element({
+				el: '#element-baf4e9e5-1ae8-4715-9252-0a3101ac6e76'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement885158638310565141();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement885158638310565141, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement885158638310565141();
+		}
+	});
+}
+
+</script></div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:25.899105576189%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:59px;"></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:29px;"></div>
+
+<div class="paragraph" style="text-align:center;"><font color="#818181" size="4">\/&nbsp; <em>CLICK THUMBNAIL IMAGES BELOW FOR LARGER VIEW</em>&nbsp; \/</font></div>
+
+<div><div style="height: 20px; overflow: hidden;"></div>
+				<div id='704082800966711313-gallery' class='imageGallery' style='line-height: 0px; padding: 0; margin: 0'>
+<div id='704082800966711313-imageContainer0' style='float:left;width:33.28%;margin:0;'><div id='704082800966711313-insideImageContainer0' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder galleryCaptionHover' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/2/7/3/127347023/db-conceptualdbdesign_orig.png' rel='lightbox[gallery704082800966711313]' title='Far-from-boring conceptual database design diagram depicting Entity-Relationships amongst attributes of fish inventory datasets.
+(Created in Draw.io)'><img src='uploads/1/2/7/3/127347023/db-conceptualdbdesign.png' class='galleryImage' _width='925' _height='715' style='position:absolute;border:0;width:100%;top:-1.53%;left:0%' /><div class='galleryCaptionHolder fullImageGalleryCaption' style=''>
+					<div class='galleryCaptionHolderInnerBg'></div>
+					<div class='galleryCaptionHolderInner'>
+						<div class='galleryCaptionInnerTextHolder'>
+							<div class='galleryCaptionInnerText'>Far-from-boring conceptual database design diagram depicting Entity-Relationships amongst attributes of fish inventory datasets.
+(Created in Draw.io)</div>
+						</div>
+					</div>
+				</div></a></div></div></div></div></div><div id='704082800966711313-imageContainer1' style='float:left;width:33.28%;margin:0;'><div id='704082800966711313-insideImageContainer1' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder galleryCaptionHover' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/2/7/3/127347023/db-copycode_orig.png' rel='lightbox[gallery704082800966711313]' title='Screencaps (from in pgAdmin) displaying the SQL Data Definition Language (DDL) statements which create the data tables in the PostgreSQL database.'><img src='uploads/1/2/7/3/127347023/db-copycode.png' class='galleryImage' _width='904' _height='616' style='position:absolute;border:0;width:110.06%;top:0%;left:-5.03%' /><div class='galleryCaptionHolder fullImageGalleryCaption' style=''>
+					<div class='galleryCaptionHolderInnerBg'></div>
+					<div class='galleryCaptionHolderInner'>
+						<div class='galleryCaptionInnerTextHolder'>
+							<div class='galleryCaptionInnerText'>Screencaps (from in pgAdmin) displaying the SQL Data Definition Language (DDL) statements which create the data tables in the PostgreSQL database.</div>
+						</div>
+					</div>
+				</div></a></div></div></div></div></div><div id='704082800966711313-imageContainer2' style='float:left;width:33.28%;margin:0;'><div id='704082800966711313-insideImageContainer2' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder galleryCaptionHover' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/2/7/3/127347023/npees_orig.gif' rel='lightbox[gallery704082800966711313]' title='A gif animation demonstrating database tables created and populated in PostgreSQL (via pgAdmin) as a result of running the SQL DDL code statements (middle image).'><img src='uploads/1/2/7/3/127347023/npees.gif' class='galleryImage' _width='582' _height='454' style='position:absolute;border:0;width:100%;top:-2%;left:0%' /><div class='galleryCaptionHolder fullImageGalleryCaption' style=''>
+					<div class='galleryCaptionHolderInnerBg'></div>
+					<div class='galleryCaptionHolderInner'>
+						<div class='galleryCaptionInnerTextHolder'>
+							<div class='galleryCaptionInnerText'>A gif animation demonstrating database tables created and populated in PostgreSQL (via pgAdmin) as a result of running the SQL DDL code statements (middle image).</div>
+						</div>
+					</div>
+				</div></a></div></div></div></div></div><span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
+</div>
+
+				<div style="height: 20px; overflow: hidden;"></div></div>
+
+<div class="wsite-spacer" style="height:93px;"></div>
+			</div>
+		</div>
+					</div>
+
+	</div>
+</div>
+<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-46 wsite-custom-background" style="background-color: #e6e6e6;background-image: none;is_customized: 1;" >
+		<div class="wsite-section-content">
+						<div class="container">
+			<div class="wsite-section-elements">
+				<h2 class="wsite-content-title" style="text-align:left;">Developing and Managing File&nbsp;Geodatabases &amp;<br />Multi-User Enterprise Geodatabases<br /></h2>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:64.012738853503%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><strong><font size="4"><br />&#8203;Description</font></strong></div>
+
+<div class="paragraph"><font color="#818181">This project had two main components to it:<br />1) to create and apply topological relationships to feature datasets for data management integrity<br />2) create an enterprise geodatabase (EGDB) in a RDMS&nbsp;</font>&ndash;<font color="#818181"> PostgreSQL in this case&nbsp;</font>&ndash;<font color="#818181"> and populate it with feature classes originating as SQL queries created by me<br />&#8203;<br />&#8203;The goal of the first part was to apply topology to data and see how the rules work. The goal of the second problem was to see how to create tables in an enterprise geodatabase.<br />&#8203;</font></div>
+
+<div class="paragraph"><font size="4"><strong>Analysis Procedures</strong></font></div>
+
+<div class="paragraph">&#8203;For data management integrity and analyzing spatial relationships, I created a feature dataset topology for the streams polylines, fences polylines, and parkboundary lines feature layers such that rules would be enforced that a) fences <em>must not overlap with</em> stream lines and b) streams <em>must be inside</em> the park boundary. For a), the rule makes sense in the topology because fences are not built in streams. For b), in analysis scenarios needing to determine how many streams and/or the spatial relationships between stream locations and species within the park, having the topology rule in place helps streamline (no pun intended) the workflow by ensuring that geoprocessing tasks are using only data within the park polygon(s).</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:35.987261146497%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:0px;margin-left:10px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/2/7/3/127347023/published/topo.png?1682901062" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">Snapshot of File Geodatabase organization utilizing a Topology Rules Feature Dataset containing in it the feature classes with rules applied to them.</div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="paragraph"><font size="4"><strong>Results</strong></font></div>
+
+<div class="paragraph"><font color="#818181">The results of this assignment were a file geodatabase containing several feature classes inside a feature dataset with topology rules applied to them, a map displaying the topological errors, an enterprise geodatabase populated with both data created from SQL statements and the file geodatabase, and a map exhibit displaying the features inside the enterprise geodatabase</font><font color="#626262">.</font></div>
+
+<div class="paragraph"><font size="4"><strong>Reflection</strong></font></div>
+
+<div class="paragraph"><font color="#818181">This project was foundational and key to developing competence - and confidence - in navigating the complex, nuanced realm of data management and its applications to developing well organized file GDBs and multi-user EGDBs.<br /><br />&#8203;</font><br /></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:22.592261459907%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:51.823007329835%; padding:0 15px;">
+					
+						
+
+<div id="212572739610796221"><div><style type="text/css">
+	#element-5aa22c63-fc98-4095-aeaf-ad8b87f83a58 .content-color-box-wrapper {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(57,150,184,0.3);
+  border-style: None;
+  border-color: #555555;
+  border-width: 3px;
+}
+
+</style><div id="element-5aa22c63-fc98-4095-aeaf-ad8b87f83a58" data-platform-element-id="698263678581730663-1.1.0" class="platform-element-contents">
+<div class="content-color-box-wrapper">
+<div style="width: 100%"><div></div><div class="paragraph" style="text-align:center;"><strong><font color="#24678d">TAGS:&nbsp; </font></strong><font color="#24678d">FGDB, EGDB, SQL, RDBM, Topological Rules</font><br /></div></div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement212572739610796221() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "698263678581730663-1.1.0";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = PlatformElement.extend({initialize:function(options){},events:{}});;
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"spacingSize_each":[{"spacingSize_index":0},{"spacingSize_index":1},{"spacingSize_index":2},{"spacingSize_index":3},{"spacingSize_index":4}],"cornerRadius_each":[{"cornerRadius_index":0},{"cornerRadius_index":1},{"cornerRadius_index":2},{"cornerRadius_index":3},{"cornerRadius_index":4}],"borderWidth_each":[{"borderWidth_index":0},{"borderWidth_index":1},{"borderWidth_index":2}],"backgroundColor":"#3996B8","backgroundTransparency":30,"spacingSize":5,"cornerRadius":5,"borderStyle":"None","borderColor":"#555","borderWidth":3,"borderTransparency":100});
+			_Element.prototype.settings.page_element_id = "212572739610796221";
+
+			_Element.prototype.element_id = "5aa22c63-fc98-4095-aeaf-ad8b87f83a58";
+			_Element.prototype.user_id = "127347023";
+			_Element.prototype.site_id = "951126548443794374";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-698263678581730663-1.1.0/assets/";
+			new _Element({
+				el: '#element-5aa22c63-fc98-4095-aeaf-ad8b87f83a58'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement212572739610796221();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement212572739610796221, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement212572739610796221();
+		}
+	});
+}
+
+</script></div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:25.584731210258%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div id="742157850720456447"><div><style type="text/css">
+	#element-84dccc32-3c04-4bb1-9603-a93825f15a8b .content-color-box-wrapper {
+  padding: 10px;
+  border-radius: 0px;
+  background-color: rgba(57,150,184,0);
+  border-style: Solid;
+  border-color: #d5d5d5;
+  border-width: 2px;
+}
+
+</style><div id="element-84dccc32-3c04-4bb1-9603-a93825f15a8b" data-platform-element-id="698263678581730663-1.1.0" class="platform-element-contents">
+<div class="content-color-box-wrapper">
+<div style="width: 100%"><div></div><div><div style="height:10px;overflow:hidden"></div>
+<div id='725066430953296714-slideshow'></div>
+<script type='text/javascript'>
+(function(jQuery) {
+function init() { window.wSlideshow && window.wSlideshow.render({elementID:"725066430953296714",nav:"thumbnails",navLocation:"top",captionLocation:"top",transition:"fade",autoplay:"1",speed:"5",aspectRatio:"4:3",showControls:"true",randomStart:"false",images:[{"url":"1/2/7/3/127347023/gewatoporuleserrorsmap.png","width":"800","height":"618","caption":"Map created to display GDB Topology errors that arose from validation of the (example) topology rules I created on the feature classes."},{"url":"1/2/7/3/127347023/egdbcnx-postgresql.png","width":"375","height":"886","caption":"Screencap from ArcPro Catalog displaying the EGDB connection (.sde) and all the spatial and non-spatial data items I created in it"},{"url":"1/2/7/3/127347023/gewa-mapfish.png","width":"800","height":"618","caption":"Final map displaying all EGDB feature classes with special depiction for the fish sampling locations."}]}) }
+jQuery(document).ready(init);
+})(window.jQuery)
+</script>
+
+<div style="height:10px;overflow:hidden"></div></div></div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement742157850720456447() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "698263678581730663-1.1.0";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = PlatformElement.extend({initialize:function(options){},events:{}});;
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"spacingSize_each":[{"spacingSize_index":0},{"spacingSize_index":1},{"spacingSize_index":2},{"spacingSize_index":3},{"spacingSize_index":4},{"spacingSize_index":5},{"spacingSize_index":6},{"spacingSize_index":7},{"spacingSize_index":8},{"spacingSize_index":9}],"borderWidth_each":[{"borderWidth_index":0},{"borderWidth_index":1}],"backgroundColor":"#3996B8","backgroundTransparency":0,"spacingSize":10,"cornerRadius":0,"borderStyle":"Solid","borderColor":"#d5d5d5","borderWidth":2,"borderTransparency":100});
+			_Element.prototype.settings.page_element_id = "742157850720456447";
+
+			_Element.prototype.element_id = "84dccc32-3c04-4bb1-9603-a93825f15a8b";
+			_Element.prototype.user_id = "127347023";
+			_Element.prototype.site_id = "951126548443794374";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-698263678581730663-1.1.0/assets/";
+			new _Element({
+				el: '#element-84dccc32-3c04-4bb1-9603-a93825f15a8b'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement742157850720456447();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement742157850720456447, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement742157850720456447();
+		}
+	});
+}
+
+</script></div></div>
+
+<div class="wsite-spacer" style="height:111px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div id="442232404770164957"><div><style type="text/css">
+	#element-6ef3c0ee-3a73-4a78-b443-2c6d037b7812 .content-color-box-wrapper {
+  padding: 5px;
+  border-radius: 0px;
+  background-color: #24678d;
+  border-style: None;
+  border-color: #555555;
+  border-width: 3px;
+}
+
+</style><div id="element-6ef3c0ee-3a73-4a78-b443-2c6d037b7812" data-platform-element-id="698263678581730663-1.1.0" class="platform-element-contents">
+<div class="content-color-box-wrapper">
+<div style="width: 100%"><div></div><div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-highlight" href="modeling--analytics.html" >
+<span class="wsite-button-inner">To: Modeling &amp; Analytics ▶ </span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div></div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement442232404770164957() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "698263678581730663-1.1.0";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = PlatformElement.extend({initialize:function(options){},events:{}});;
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"spacingSize_each":[{"spacingSize_index":0},{"spacingSize_index":1},{"spacingSize_index":2},{"spacingSize_index":3},{"spacingSize_index":4}],"borderWidth_each":[{"borderWidth_index":0},{"borderWidth_index":1},{"borderWidth_index":2}],"backgroundColor":"#24678d","backgroundTransparency":100,"spacingSize":5,"cornerRadius":0,"borderStyle":"None","borderColor":"#555","borderWidth":3,"borderTransparency":100});
+			_Element.prototype.settings.page_element_id = "442232404770164957";
+
+			_Element.prototype.element_id = "6ef3c0ee-3a73-4a78-b443-2c6d037b7812";
+			_Element.prototype.user_id = "127347023";
+			_Element.prototype.site_id = "951126548443794374";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-698263678581730663-1.1.0/assets/";
+			new _Element({
+				el: '#element-6ef3c0ee-3a73-4a78-b443-2c6d037b7812'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement442232404770164957();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement442232404770164957, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement442232404770164957();
+		}
+	});
+}
+
+</script></div></div>
+
+<div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-normal" href="databases--data-management.html" >
+<span class="wsite-button-inner">To Top ▲</span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+			</div>
+		</div>
+					</div>
+
+	</div>
+</div>
+
+</div>
+
+				</div>
+			</div>
+
+			<div id="footer">
+				<div id="footer-content">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+			</div>
+		</div>
+
+		<div class="navmobile-wrapper">
+			<div id="navmobile" class="nav"><ul class="wsite-menu-default">
+		<li id="pg933583392413681456" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg978853055622443821" class="wsite-menu-item-wrap">
+			<a
+						href="about.html"
+				class="wsite-menu-item"
+				>
+				ABOUT
+			</a>
+			
+		</li>
+		<li id="pg635103956387319766" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				CORE COMPETENCIES
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-747818816243163516"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="databases--data-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Databases & Data Management
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-172902931652283997"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="modeling--analytics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Modeling & Analytics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-311315617201613396"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="programming.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Programming
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-999109239806804595"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="web-services.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Web Services
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg943448049667345801" class="wsite-menu-item-wrap">
+			<a
+						href="capstone-experience.html"
+				class="wsite-menu-item"
+				>
+				CAPSTONE EXPERIENCE
+			</a>
+			
+		</li>
+		<li id="pg935399979440701541" class="wsite-menu-item-wrap">
+			<a
+						href="program-reflection.html"
+				class="wsite-menu-item"
+				>
+				PROGRAM REFLECTION
+			</a>
+			
+		</li>
+</ul>
+</div>
+		</div>
+	</div>
+
+<script language="javascript" src="files/theme/plugins.js"></script>
+<script language="javascript" src="files/theme/custom.js"></script>
+<script language="javascript" src="files/theme/mobile.js"></script>
+
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		
+	</body>
+</html>

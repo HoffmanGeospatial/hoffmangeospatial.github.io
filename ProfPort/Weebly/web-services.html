@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Web Services - Dallas Hoffman</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1692238870" title="wsite-theme-css" />
+<link href='http://cdn2.editmysite.com/fonts/Raleway/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Lora/font.css?2' rel='stylesheet' type='text/css' />
+
+<link href='http://cdn2.editmysite.com/fonts/Muli/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Quicksand/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Journal/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Quicksand/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Yantramanav/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Playfair_Display/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Mate_SC/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Raleway/font.css?2' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Muli" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#757b7a !important;}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Quicksand" !important;text-transform:  none !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#036571 !important;}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-family:"Journal" !important;color:#1893a7 !important;font-style:normal !important;text-transform:  none !important;letter-spacing: 1px !important;}
+.wsite-menu-default a {font-family:"Montserrat" !important;font-weight:400 !important;text-transform:  uppercase !important;letter-spacing: 0px !important;}
+.wsite-menu a {font-family:"Montserrat" !important;}
+.wsite-image div, .wsite-caption {font-family:"Quicksand" !important;}
+.galleryCaptionInnerText {font-family:"Yantramanav" !important;letter-spacing: 1px !important;}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Playfair Display" !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-family:"Mate SC" !important;font-style:normal !important;letter-spacing: 1px !important;}
+.wsite-button-inner {font-family:"Raleway" !important;letter-spacing: 2px !important;}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-button-small .wsite-button-inner {font-size:9px !important;}
+.wsite-button-large .wsite-button-inner {font-size:11px !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:14px !important;line-height:18px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:30px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-size:50px !important;}
+.wsite-menu-default a {font-size:13px !important;}
+.wsite-menu a {font-size:12px !important;}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-size:60px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-size:6px !important;line-height:16px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+<style>
+.wsite-background {background-image: url("/uploads/1/2/7/3/127347023/background-images/1366250879.jpg") !important;background-repeat: no-repeat !important;background-position: 50.00% 56.12% !important;background-size: 100% !important;background-color: transparent !important;}
+body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+</style>
+		<script src='files/templateArtifacts.js?1682916892'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn2.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "US";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "951126548443794374";
+			com_userID = "127347023";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"933583392413681456","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"978853055622443821","title":"ABOUT","url":"about.html","target":"","nav_menu":false,"nonclickable":false},{"id":"635103956387319766","title":"CORE COMPETENCIES","url":"core-competencies.html","target":"","nav_menu":false,"nonclickable":true},{"id":"943448049667345801","title":"CAPSTONE EXPERIENCE","url":"capstone-experience.html","target":"","nav_menu":false,"nonclickable":false},{"id":"935399979440701541","title":"PROGRAM REFLECTION","url":"program-reflection.html","target":"","nav_menu":false,"nonclickable":false}],
+			"999109239806804595",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="header-page  wsite-page-web-services  full-width-on  wsite-theme-light"><div class="body-wrap">
+		<div id="header">
+			<div class="nav-trigger hamburger">
+				<div class="open-btn">
+					<span class="mobile"></span>
+					<span class="mobile"></span>
+					<span class="mobile"></span>
+				</div>
+			</div>
+			<div id="sitename"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Dallas Hoffman</span>
+	
+	</a>
+
+</span></div>
+		</div>
+
+		<div id="wrapper">
+			<div class="bg-wrapper">
+				<div id="navigation"><ul class="wsite-menu-default">
+		<li id="pg933583392413681456" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg978853055622443821" class="wsite-menu-item-wrap">
+			<a
+						href="about.html"
+				class="wsite-menu-item"
+				>
+				ABOUT
+			</a>
+			
+		</li>
+		<li id="pg635103956387319766" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				CORE COMPETENCIES
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-747818816243163516"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="databases--data-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Databases & Data Management
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-172902931652283997"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="modeling--analytics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Modeling & Analytics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-311315617201613396"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="programming.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Programming
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-999109239806804595"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="web-services.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Web Services
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg943448049667345801" class="wsite-menu-item-wrap">
+			<a
+						href="capstone-experience.html"
+				class="wsite-menu-item"
+				>
+				CAPSTONE EXPERIENCE
+			</a>
+			
+		</li>
+		<li id="pg935399979440701541" class="wsite-menu-item-wrap">
+			<a
+						href="program-reflection.html"
+				class="wsite-menu-item"
+				>
+				PROGRAM REFLECTION
+			</a>
+			
+		</li>
+</ul>
+</div>
+
+				<div class="banner-wrap">
+					<div class="wsite-elements wsite-not-footer wsite-header-elements">
+	<div class="wsite-section-wrap">
+	<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="vertical-align: middle;height: auto;background-image: url(&quot;/uploads/1/2/7/3/127347023/background-images/1736829324.jpg&quot;) ;background-repeat: no-repeat ;background-position: 50% 50% ;background-size: 120% ;background-color: transparent ;background-size: 120%;" >
+		<div class="wsite-section-content">
+			
+						<div id="banner">
+							<div id="banner-container">
+				<div class="wsite-section-elements">
+					<div class="paragraph"><font size="5">Web Services</font></div>
+				</div>
+			</div>
+						</div>
+					
+		</div>
+		<div class=""></div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+				<div id="content-wrapper">
+					<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-53 wsite-custom-background" style="background-color: #e6e6e6;background-image: none;is_customized: 1;" >
+		<div class="wsite-section-content">
+						<div class="container">
+			<div class="wsite-section-elements">
+				<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:22.3991507431%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/2/7/3/127347023/published/ucgis-logo.png?1682905199" alt="Picture" style="width:197;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:77.6008492569%; padding:0 15px;">
+					
+						
+
+<blockquote style="text-align:left;"><em><font color="#818181" size="3">&nbsp; &nbsp; &nbsp;Web GIS allows the sharing of GIS data, maps, and spatial processing across private and public computer networks. Understanding web GIS requires learning the roles of client and server machines and the standards and protocols around how they communicate to accomplish tasks. Cloud computing models have allowed web-based GIS operations to be scaled out to handle large jobs, while also enabling the marketing of services on a per-transaction basis.<br />&nbsp; &nbsp; &nbsp;A variety of toolkits allow the development of GIS-related websites and mobile apps. Some web GIS implementations bring together map layers and GIS services from multiple locations. In web environments, performance and security are two concerns that require heightened attention. App users expect speed, achievable through caching, indexing, and other techniques. Security precautions are necessary to ensure sensitive data is only revealed to authorized viewers.</font></em><br /><br /><font size="3" style="color:rgb(255, 250, 250)"><span style="color:rgb(108, 108, 108)">Quinn, S. (2018). Web GIS.&nbsp;</span><em style="color:rgb(108, 108, 108)"><a href="https://gistbok.ucgis.org/all-topics?term_node_tid_depth=96" target="_blank">The Geographic Information Science &amp; Technology Body of Knowledge</a></em><span style="color:rgb(108, 108, 108)">&nbsp;(1st Quarter 2018 Edition), John P. Wilson (ed).</span></font></blockquote>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:53px;"></div>
+
+<h2 class="wsite-content-title" style="text-align:left;">Building Web Mapping Applications</h2>
+
+<div class="paragraph"><strong><font size="4">Description</font></strong></div>
+
+<div class="paragraph"><font color="#818181">Conceptualize Flow Modeling - The methods for modeling hydrological flow are numerous and nontrivial. They involve cumulative terrain parameters based on flow tracing and routing such as flow-path length, flow accumulation, stream networks, watershed boundaries, and ridge lines, in addition to computing flow direction, and tracing through depressions and flat areas. Becoming familiar with the various geospatial techniques and workflows for performing hydrologic, erosion, and surface water analysis is valuable to the caliber of knowledge and robust skillset required of competent geospatial analysts.&#8203;</font></div>
+
+<div class="paragraph"><font size="4"><strong>Analysis Procedures</strong></font></div>
+
+<div class="paragraph"><font color="#818181">Flow modeling and routing computation, and watershed analysis methods performed on the given DEM of our study area in ArcPro were simply run from tools directly from the Spatial Analyst Toolbox&rsquo;s Hydrology set of tools (which are also part of the Arc Hydro Pro Tools toolbox add-in from ESRI, a much more robust and specialized toolbox for hydrology modeling and analysis). Fill (sinks), Flow Direction, Flow Accumulation, Basin, Flow Length, Stream Link, and Watershed comprised the workflow of geoprocessing steps employed on the 10m NED raster map. Derived streams from the process were then compared visually in maps against official Wake County streams (vector feature layer).&nbsp;</font></div>
+
+<div class="paragraph"><font size="4"><strong>Results</strong></font></div>
+
+<div class="paragraph"><font color="#818181">The result of computing flow direction, flow accumulation, and subwatersheds with cell size of 10000 produced four distinct subwatersheds containing the respective computed stream flows. With the Wake County streams vector layer (red lines) overlayed on computed streams, results show a very imperfect, yet approximate output with a lot of room for process improvement.&nbsp;</font></div>
+
+<div class="paragraph"><font size="4"><strong>Reflection</strong></font></div>
+
+<div class="paragraph"><font color="#818181">Hydrology and hydrography rank at the top of my favorites list of major areas of geospatial analysis science. My connection to these particular aspects is on a personal level, it being the case that I have been an avid kayaker of both flatwater and whitewater rivers for many years. Flow, accumulation, and stream delineation operations - especially when deriving from the latest and greatest multispectral aerial imagery - proffer a means by which I can connect even more (and on a scientific versus recreational level) with my environmentalist values.</font></div>
+
+
+
+<div class="wsite-spacer" style="height:124px;"></div>
+
+<div id="645852588126803875"><div><style type="text/css">
+	#element-bcc99411-2ac2-439a-9c95-7e2c02ae1739 .group-box-content {
+  clear: both;
+  float: left;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+</style><div id="element-bcc99411-2ac2-439a-9c95-7e2c02ae1739" data-platform-element-id="751043798673526236-1.0.1" class="platform-element-contents">
+	<div class="group-box">
+    <div class="group-box-content">
+        <div style="width: auto"><div></div><div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div id="424889946263494945"><div><style type="text/css">
+	#element-823fdd4b-d6d3-48d7-841a-d6e00d00d9f6 .content-color-box-wrapper {
+  padding: 5px;
+  border-radius: 0px;
+  background-color: #24678d;
+  border-style: None;
+  border-color: #555555;
+  border-width: 3px;
+}
+
+</style><div id="element-823fdd4b-d6d3-48d7-841a-d6e00d00d9f6" data-platform-element-id="698263678581730663-1.1.0" class="platform-element-contents">
+<div class="content-color-box-wrapper">
+<div style="width: 100%"><div></div><div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-highlight" href="capstone-experience.html" >
+<span class="wsite-button-inner">To: Capstone Experience ▶</span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div></div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement424889946263494945() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "698263678581730663-1.1.0";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = PlatformElement.extend({initialize:function(options){},events:{}});;
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"spacingSize_each":[{"spacingSize_index":0},{"spacingSize_index":1},{"spacingSize_index":2},{"spacingSize_index":3},{"spacingSize_index":4}],"borderWidth_each":[{"borderWidth_index":0},{"borderWidth_index":1},{"borderWidth_index":2}],"backgroundColor":"#24678d","backgroundTransparency":100,"spacingSize":5,"cornerRadius":0,"borderStyle":"None","borderColor":"#555","borderWidth":3,"borderTransparency":100});
+			_Element.prototype.settings.page_element_id = "424889946263494945";
+
+			_Element.prototype.element_id = "823fdd4b-d6d3-48d7-841a-d6e00d00d9f6";
+			_Element.prototype.user_id = "127347023";
+			_Element.prototype.site_id = "951126548443794374";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-698263678581730663-1.1.0/assets/";
+			new _Element({
+				el: '#element-823fdd4b-d6d3-48d7-841a-d6e00d00d9f6'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement424889946263494945();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement424889946263494945, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement424889946263494945();
+		}
+	});
+}
+
+</script></div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-normal" href="web-services.html" >
+<span class="wsite-button-inner">To Top ▲</span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div></div>
+    </div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement645852588126803875() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "751043798673526236-1.0.1";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = /**
+ * This is required for element rendering to be possible
+ * @type {PlatformElement}
+ */
+(function() {
+    var ColoredBox = PlatformElement.extend({
+
+        initialize: function() {
+        }
+
+    });
+
+    return ColoredBox;
+})();
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"color":"#000000","opacity":40});
+			_Element.prototype.settings.page_element_id = "645852588126803875";
+
+			_Element.prototype.element_id = "bcc99411-2ac2-439a-9c95-7e2c02ae1739";
+			_Element.prototype.user_id = "127347023";
+			_Element.prototype.site_id = "951126548443794374";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-751043798673526236-1.0.1/assets/";
+			new _Element({
+				el: '#element-bcc99411-2ac2-439a-9c95-7e2c02ae1739'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement645852588126803875();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement645852588126803875, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement645852588126803875();
+		}
+	});
+}
+
+</script></div></div>
+			</div>
+		</div>
+					</div>
+
+	</div>
+</div>
+
+</div>
+
+				</div>
+			</div>
+
+			<div id="footer">
+				<div id="footer-content">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+			</div>
+		</div>
+
+		<div class="navmobile-wrapper">
+			<div id="navmobile" class="nav"><ul class="wsite-menu-default">
+		<li id="pg933583392413681456" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg978853055622443821" class="wsite-menu-item-wrap">
+			<a
+						href="about.html"
+				class="wsite-menu-item"
+				>
+				ABOUT
+			</a>
+			
+		</li>
+		<li id="pg635103956387319766" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				CORE COMPETENCIES
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-747818816243163516"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="databases--data-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Databases & Data Management
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-172902931652283997"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="modeling--analytics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Modeling & Analytics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-311315617201613396"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="programming.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Programming
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-999109239806804595"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="web-services.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Web Services
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg943448049667345801" class="wsite-menu-item-wrap">
+			<a
+						href="capstone-experience.html"
+				class="wsite-menu-item"
+				>
+				CAPSTONE EXPERIENCE
+			</a>
+			
+		</li>
+		<li id="pg935399979440701541" class="wsite-menu-item-wrap">
+			<a
+						href="program-reflection.html"
+				class="wsite-menu-item"
+				>
+				PROGRAM REFLECTION
+			</a>
+			
+		</li>
+</ul>
+</div>
+		</div>
+	</div>
+
+<script language="javascript" src="files/theme/plugins.js"></script>
+<script language="javascript" src="files/theme/custom.js"></script>
+<script language="javascript" src="files/theme/mobile.js"></script>
+
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		
+	</body>
+</html>
