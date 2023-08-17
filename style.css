@@ -1,0 +1,265 @@
+<style type="text/css">
+wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+  .product-block
+  .product-title,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+  .product-description,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+  .wsite-form-field
+  label,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+  .wsite-form-field
+  label,
+#wsite-content div.paragraph,
+#wsite-content p,
+#wsite-content .product-block .product-title,
+#wsite-content .product-description,
+#wsite-content .wsite-form-field label,
+#wsite-content .wsite-form-field label,
+.blog-sidebar div.paragraph,
+.blog-sidebar p,
+.blog-sidebar .wsite-form-field label,
+.blog-sidebar .wsite-form-field label {
+  font-family: "Muli" !important;
+}
+#wsite-content div.paragraph,
+#wsite-content p,
+#wsite-content .product-block .product-title,
+#wsite-content .product-description,
+#wsite-content .wsite-form-field label,
+#wsite-content .wsite-form-field label,
+.blog-sidebar div.paragraph,
+.blog-sidebar p,
+.blog-sidebar .wsite-form-field label,
+.blog-sidebar .wsite-form-field label {
+  color: #757b7a !important;
+}
+.wsite-elements.wsite-footer div.paragraph,
+.wsite-elements.wsite-footer p,
+.wsite-elements.wsite-footer .product-block .product-title,
+.wsite-elements.wsite-footer .product-description,
+.wsite-elements.wsite-footer .wsite-form-field label,
+.wsite-elements.wsite-footer .wsite-form-field label {
+}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+  .product-long
+  .product-title,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+  .product-large
+  .product-title,
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+  .product-small
+  .product-title,
+#wsite-content h2,
+#wsite-content .product-long .product-title,
+#wsite-content .product-large .product-title,
+#wsite-content .product-small .product-title,
+.blog-sidebar h2 {
+  font-family: "Quicksand" !important;
+  text-transform: none !important;
+}
+#wsite-content h2,
+#wsite-content .product-long .product-title,
+#wsite-content .product-large .product-title,
+#wsite-content .product-small .product-title,
+.blog-sidebar h2 {
+  color: #036571 !important;
+}
+.wsite-elements.wsite-footer h2,
+.wsite-elements.wsite-footer .product-long .product-title,
+.wsite-elements.wsite-footer .product-large .product-title,
+.wsite-elements.wsite-footer .product-small .product-title {
+}
+#wsite-title {
+  font-family: "Journal" !important;
+  color: #1893a7 !important;
+  font-style: normal !important;
+  text-transform: none !important;
+  letter-spacing: 1px !important;
+}
+.wsite-menu-default a {
+  font-family: "Montserrat" !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0px !important;
+}
+.wsite-menu a {
+  font-family: "Montserrat" !important;
+}
+.wsite-image div,
+.wsite-caption {
+  font-family: "Quicksand" !important;
+}
+.galleryCaptionInnerText {
+  font-family: "Yantramanav" !important;
+  letter-spacing: 1px !important;
+}
+.fancybox-title {
+}
+.wslide-caption-text {
+}
+.wsite-phone {
+}
+.wsite-headline,
+.wsite-header-section .wsite-content-title {
+  font-family: "Playfair Display" !important;
+}
+.wsite-headline-paragraph,
+.wsite-header-section .paragraph {
+  font-family: "Mate SC" !important;
+  font-style: normal !important;
+  letter-spacing: 1px !important;
+}
+.wsite-button-inner {
+  font-family: "Raleway" !important;
+  letter-spacing: 2px !important;
+}
+.wsite-not-footer blockquote {
+}
+.wsite-footer blockquote {
+}
+.blog-header h2 a {
+}
+#wsite-content h2.wsite-product-title {
+}
+.wsite-product .wsite-product-price a {
+}
+.wsite-button-small .wsite-button-inner {
+  font-size: 9px !important;
+}
+.wsite-button-large .wsite-button-inner {
+  font-size: 11px !important;
+}
+@media screen and (min-width: 767px) {
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+    .product-block
+    .product-title,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+    .product-description,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+    .wsite-form-field
+    label,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+    .wsite-form-field
+    label,
+  #wsite-content div.paragraph,
+  #wsite-content p,
+  #wsite-content .product-block .product-title,
+  #wsite-content .product-description,
+  #wsite-content .wsite-form-field label,
+  #wsite-content .wsite-form-field label,
+  .blog-sidebar div.paragraph,
+  .blog-sidebar p,
+  .blog-sidebar .wsite-form-field label,
+  .blog-sidebar .wsite-form-field label {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  #wsite-content div.paragraph,
+  #wsite-content p,
+  #wsite-content .product-block .product-title,
+  #wsite-content .product-description,
+  #wsite-content .wsite-form-field label,
+  #wsite-content .wsite-form-field label,
+  .blog-sidebar div.paragraph,
+  .blog-sidebar p,
+  .blog-sidebar .wsite-form-field label,
+  .blog-sidebar .wsite-form-field label {
+  }
+  .wsite-elements.wsite-footer div.paragraph,
+  .wsite-elements.wsite-footer p,
+  .wsite-elements.wsite-footer .product-block .product-title,
+  .wsite-elements.wsite-footer .product-description,
+  .wsite-elements.wsite-footer .wsite-form-field label,
+  .wsite-elements.wsite-footer .wsite-form-field label {
+  }
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+    .product-long
+    .product-title,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+    .product-large
+    .product-title,
+  .wsite-elements.wsite-not-footer:not(.wsite-header-elements)
+    .product-small
+    .product-title,
+  #wsite-content h2,
+  #wsite-content .product-long .product-title,
+  #wsite-content .product-large .product-title,
+  #wsite-content .product-small .product-title,
+  .blog-sidebar h2 {
+    font-size: 30px !important;
+  }
+  #wsite-content h2,
+  #wsite-content .product-long .product-title,
+  #wsite-content .product-large .product-title,
+  #wsite-content .product-small .product-title,
+  .blog-sidebar h2 {
+  }
+  .wsite-elements.wsite-footer h2,
+  .wsite-elements.wsite-footer .product-long .product-title,
+  .wsite-elements.wsite-footer .product-large .product-title,
+  .wsite-elements.wsite-footer .product-small .product-title {
+  }
+  #wsite-title {
+    font-size: 50px !important;
+  }
+  .wsite-menu-default a {
+    font-size: 13px !important;
+  }
+  .wsite-menu a {
+    font-size: 12px !important;
+  }
+  .wsite-image div,
+  .wsite-caption {
+  }
+  .galleryCaptionInnerText {
+  }
+  .fancybox-title {
+  }
+  .wslide-caption-text {
+  }
+  .wsite-phone {
+  }
+  .wsite-headline,
+  .wsite-header-section .wsite-content-title {
+    font-size: 60px !important;
+  }
+  .wsite-headline-paragraph,
+  .wsite-header-section .paragraph {
+    font-size: 6px !important;
+    line-height: 16px !important;
+  }
+  .wsite-button-inner {
+  }
+  .wsite-not-footer blockquote {
+  }
+  .wsite-footer blockquote {
+  }
+  .blog-header h2 a {
+  }
+  #wsite-content h2.wsite-product-title {
+  }
+  .wsite-product .wsite-product-price a {
+  }
+}
+
+/* SECOND SNIPPET */
+.wsite-background {
+  background-image: url("/uploads/1/2/7/3/127347023/background-images/1366250879.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 56.12% !important;
+  background-size: 100% !important;
+  background-color: transparent !important;
+}
+body.wsite-background {
+  background-attachment: fixed !important;
+}
+.wsite-background.wsite-custom-background {
+  background-size: cover !important;
+}
