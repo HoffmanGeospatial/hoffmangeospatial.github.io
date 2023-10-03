@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<manifest identifier="GsYiUGDBAQ99Au3RQ70lL1DRn24TSDaZOgatVQxe" version="1"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                      http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+  <organizations default="articulate_rise">
+      <organization identifier="articulate_rise">
+      <title>Yield Monitor Data Analysis</title>
+      <item identifier="i1" identifierref="r1" isvisible="true">
+        <title>Yield Monitor Data Analysis</title>
+        <adlcp:datafromlms>eyJjcHYiOiJPZ2F0VlF4ZSIsInJsZCI6ZmFsc2V9</adlcp:datafromlms>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="r1" type="webcontent" adlcp:scormtype="sco" href="scormdriver/indexAPI.html">
+      <!-- SCORMDRIVER STUFF -->
+      <file href="scormdriver/indexAPI.html" />
+      <file href="scormdriver/preloadIntegrity.js" />
+      <file href="scormdriver/driverOptions.js" />
+      <file href="scormdriver/AICCComm.html" />
+      <file href="scormdriver/auto-scripts/AutoBookmark.js" />
+      <file href="scormdriver/auto-scripts/AutoCompleteSCO.js" />
+      <file href="scormdriver/auto-scripts/CourseExit.js" />
+      <file href="scormdriver/blank.html" />
+      <file href="scormdriver/goodbye.html" />
+      <file href="scormdriver/scormdriver.js" />
+      <file href="scormdriver/browsersniff.js" />
+
+      <!-- RUNTIME COMMON STUFF -->
+      <file href="scormcontent/index.html" />
+
+      
+        <file href="scormcontent/lib/fonts/icomoon.ttf"/>
+        <file href="scormcontent/lib/fonts/icomoon.woff"/>
+
+        <file href="scormcontent/lib/icomoon.css"/>
+        <file href="scormcontent/lib/player-0.0.11.min.js"/>
+        <file href="scormcontent/lib/lzwcompress.js"/>
+      
+
+      <!-- FRONTEND BUNDLE ASSETS -->
+      <file href="scormcontent/lib/rise/90e7d30b.js" />
+<file href="scormcontent/lib/rise/11732e6a.css" />
+<file href="scormcontent/lib/rise/a8d5b75c.js" />
+<file href="scormcontent/lib/rise/f08cf42d.css" />
+<file href="scormcontent/lib/rise/1c5f2d3c.js" />
+<file href="scormcontent/lib/rise/eb9bd09f.js" />
+<file href="scormcontent/lib/rise/20be7de8.js" />
+
+
+      <!-- RUNTIME CONTENT STUFF -->
+      <file href="scormcontent/lib/fonts/RobotoSlab-Bold.woff" />
+<file href="scormcontent/lib/fonts/RobotoSlab-Regular.woff" />
+<file href="scormcontent/lib/fonts/RobotoSlab-Light.woff" />
+<file href="scormcontent/lib/fonts/Lato-Black.woff" />
+<file href="scormcontent/lib/fonts/Lato-Italic.woff" />
+<file href="scormcontent/lib/fonts/Lato-Bold.woff" />
+<file href="scormcontent/lib/fonts/Lato-Regular.woff" />
+<file href="scormcontent/lib/fonts/Lato-Light.woff" />
+<file href="scormcontent/assets/jO-AlSPn5iBDKxY7_small_1690089177.png" />
+<file href="scormcontent/assets/iS4q2sKCGez_Zdca_TCKzwKS7Oixee-dF.png" />
+<file href="scormcontent/assets/NQSPEY-J-oJQdKjj_UFmQ8NDpkTo0CIB4.jpg" />
+<file href="scormcontent/assets/H9SrWGkI0NVis3gg_supHkgiDdlMjhEOZ.png" />
+<file href="scormcontent/assets/bMxl5suA-RXKyo5R_Vo3vdf_Ila0wI5OR.jpg" />
+<file href="scormcontent/assets/ErJNETgIGWXp4rx2_transcoded-OyXkm0Y0dHe69pVQ-Beyond%20the%20Bean%20Yield%20Monitoring_Trim-00001.png" />
+<file href="scormcontent/assets/R7RLR-xjFm321Umj_transcoded-OyXkm0Y0dHe69pVQ-Beyond%20the%20Bean%20Yield%20Monitoring_Trim.mp4" />
+<file href="scormcontent/assets/vuiTJo3K2U-FmN-i_beach_rocks.jpg" />
+<file href="scormcontent/assets/EqF_EBIW8LdMhg2y_sky_mountains.jpg" />
+<file href="scormcontent/assets/iFf9oQ0ObCgUh5hX_NXP_RHkMGpHGe6Ix.jpg" />
+<file href="scormcontent/assets/MFsOvdJXdKftYfx7_IdokIMH1Rys-rfZ8.jpg" />
+<file href="scormcontent/assets/DjVAY-wPhWeOqr5R_OhfXA5qZJq6h9LBA.jpg" />
+<file href="scormcontent/assets/VZsAFEzR3WC6ANsf_5_misc.jpg" />
+<file href="scormcontent/assets/1lsBA8LneIoXKE2Q_example-header-image.jpg" />
+
+    </resource>
+  </resources>
+</manifest>
