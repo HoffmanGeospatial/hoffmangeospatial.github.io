@@ -2,13 +2,13 @@
 layout: page
 title: FAQ
 permalink: /faq/
-description: "Last Updated: 3/03/25"
+description: "Last Updated: 3/06/25"
 nav: true
 nav_order: 3
 
 ---
 
-#### 1. How do you account for the gap in your employment? / Why haven't you worked since October?
+#### * How do you account for the gap in your employment? / Why haven't you worked since October?
 <div class="content">
 After making the hard decision to resign from my last position at NC State, I knew I was going to 
 finally allow myself the time and space to recover from what could only be described as 
@@ -26,15 +26,13 @@ I am proud of myself for it, and starting off into another decade refreshed and 
 
 <br>
 
-#### 2. What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
+#### * What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
 Yes.
-
 <br>
 
-#### 3. How did you get into GIS/Geospatial?
-Arthritis. And friends.
+#### * How did you get into GIS/Geospatial?
+<span style="font-size:12px;">[tl;dr]</span>  Arthritis. And friends.
 <br>
-To make as short as I can a story that is otherwise really not short at all: 
 I had first heard about GIS many many years ago from my Earth Club and Veterans Club friends as an undergrad.
 The way they described it intrigued my lifelong map-loving, geography-minded, and environmentalist heart. 
 So a handful of years later, when I had to transition out of working in the outdoors industries due to debilitating arthritis in my feet, 
@@ -44,10 +42,19 @@ I knew I had landed right where I could thrive... while staying off my feet and 
 
 
 <br>
-#### 4. How old are you?
+
+#### * Is this not a professional <b><i>portfolio</b></i> site? Where are samples of your work?
+This is the second ‒ and very different ‒ iteration of my Hoffman Geospatial website.
+(This one I forked, modified, customized, served, built, and deployed all in Visual Studio Code.)
+<br>Sadly, as of this writing, all that I can access of my other professional website 
+is just this single, barebones <a href="https://web.archive.org/web/20211202183343/https://www.hoffmangeospatial.com/">snapshot</a> from the Way Back Machine. However, I am working on redoing the topic tags like you see on my old site, because I enjoy "knowing how much I know"! :smiley:
+
+<br>
+
+#### * How old are you?
 I can neither confirm nor deny that I was born right around the time Geo. Orwell warned about.
 
 
 <br>
-#### 5. What is your relationship to the elite sport of ice hockey?
-<!-- It is and has always been venerated in my life, by me. I became obsessed in my single-digit years. -->
+<!-- #### . What is your relationship to the elite sport of ice hockey?
+It is and has always been venerated in my life, by me. I became obsessed in my single-digit years. -->

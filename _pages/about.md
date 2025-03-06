@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Professional website of Dallas Hoffman, GISP.
+subtitle: Professional website of Dallas Hoffman, <a href="https://www.gisci.org/">GISP.</a>
 
 profile:
   align: right
@@ -31,19 +31,21 @@ latest_posts:
 
 Hello and Welcome! 👋
 <br>
-Thank you for visiting the second* ‒ and very different ‒ iteration of my Hoffman Geospatial website.
-This one I forked, modified, customized, served, built, and deployed all in Visual Studio Code!
+Thank you for visiting my website, where I hope you will get to learn some things about me as a Geospatial Professional.
+My journey has been extraordinarily far from "linear", or traditional/conventional, and I draw a lot strengths-wise from this facet. 
+<br>I am proud to be a Geospatial Data Analytics Scientist, having in 2023 earned my Master in Geospatial Information Science and Technology (MGIST) degree from the Center for Geospatial Analytics at North Carolina State University. :globe_with_meridians: :nerd_face:
 <br>
-However, don't let that fool you: I am a Geospatial Data Scientist (& GIS nerd) at heart! :globe_with_meridians: :nerd_face:
-<br>
-I am deeply engaged by the myriad systems, applications, workflows, concepts, techniques, challenges, etc. that the GIS and Geospatial Analytics realm proffer. 
+I am deeply engaged by the myriad systems, applications, workflows, concepts, techniques, challenges, etc. that the GIS and Geospatial Analytics realms proffer. 
 It is "never a dull moment" and that propels me. 
- 
 <br>
 <br>
 <br>
-<span style="font-size:14px;"> *Sadly, as of this writing, all that I can access of my other professional website 
-<br>is just this single, barebones <a href="https://web.archive.org/web/20211202183343/https://www.hoffmangeospatial.com/">snapshot</a> from the Way Back Machine. </span>
-
+<span style="font-size:14px;">
+Kindly,
+<br>Dallas
+<br>hoffmangeospatial@gmx.com
+</span>
+<br>
+<img src="/assets/img/ncsflag.png>
 <br>
 <br>
