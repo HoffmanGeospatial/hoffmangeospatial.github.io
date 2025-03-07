@@ -26,8 +26,13 @@ I am proud of myself for it, and starting off into another decade refreshed and 
 
 <br>
 
-#### :question: What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
-Yes.
+<br>
+
+#### :question: Is this not a professional <b><i>portfolio</i></b> site? Where are samples of your work?
+This is the second ‒ and very different ‒ iteration of my Hoffman Geospatial website.
+(This one I forked, modified, customized, served, built, and deployed all in Visual Studio Code.)
+<br>Sadly, as of this writing, all that I can access of my other professional website 
+is just this single, barebones <a href="https://web.archive.org/web/20211202183343/https://www.hoffmangeospatial.com/">snapshot</a> from the Way Back Machine. However, I am working on redoing the topic tags like you see on my old site, because I enjoy "knowing how much I know"! :smiley:
 
 <br>
 
@@ -42,16 +47,13 @@ I began to take a look at GIS and how it could potentially keep me connected to 
 Very quickly, I fell right in love with it all and especially thanks to free online GIS learning resources such as ESRI Academy and Coursera,
 I knew I had landed right where I could thrive... while staying off my feet and out of unnecessary severe pain.
 
+<br>
+
+#### :question: What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
+Yes.
 
 <br>
 
-#### :question: Is this not a professional <b><i>portfolio</i></b> site? Where are samples of your work?
-This is the second ‒ and very different ‒ iteration of my Hoffman Geospatial website.
-(This one I forked, modified, customized, served, built, and deployed all in Visual Studio Code.)
-<br>Sadly, as of this writing, all that I can access of my other professional website 
-is just this single, barebones <a href="https://web.archive.org/web/20211202183343/https://www.hoffmangeospatial.com/">snapshot</a> from the Way Back Machine. However, I am working on redoing the topic tags like you see on my old site, because I enjoy "knowing how much I know"! :smiley:
-
-<br>
 
 <!--#### :question: How <s>old are you</s> many years have you been alive?
 I can neither confirm nor deny that I was born right around the time Geo. Orwell warned about.-->
