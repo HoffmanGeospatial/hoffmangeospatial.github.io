@@ -28,6 +28,7 @@ I am proud of myself for it, and starting off into another decade refreshed and 
 
 #### :question: What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
 Yes.
+
 <br>
 
 
@@ -52,8 +53,8 @@ is just this single, barebones <a href="https://web.archive.org/web/202112021833
 
 <br>
 
-#### :question: How <s>old are you</s> many years have you been alive?
-I can neither confirm nor deny that I was born right around the time Geo. Orwell warned about.
+<!--#### :question: How <s>old are you</s> many years have you been alive?
+I can neither confirm nor deny that I was born right around the time Geo. Orwell warned about.-->
 
 
 <br>
