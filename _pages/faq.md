@@ -8,7 +8,7 @@ nav_order: 3
 
 ---
 
-#### * How do you account for the gap in your employment? / Why haven't you worked since October?
+#### :question: How do you account for the gap in your employment? / Why haven't you worked since October?
 <div class="content">
 After making the hard decision to resign from my last position at NC State, I knew I was going to 
 finally allow myself the time and space to recover from what could only be described as 
@@ -26,11 +26,12 @@ I am proud of myself for it, and starting off into another decade refreshed and 
 
 <br>
 
-#### * What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
+#### :question: What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
 Yes.
 <br>
 
-#### * How did you get into GIS/Geospatial?
+
+#### :question: How did you get into GIS/Geospatial?
 <span style="font-size:12px;">[tl;dr]</span>  Arthritis. And friends.
 <br>
 I had first heard about GIS many many years ago from my Earth Club and Veterans Club friends as an undergrad.
@@ -43,7 +44,7 @@ I knew I had landed right where I could thrive... while staying off my feet and 
 
 <br>
 
-#### * Is this not a professional <b><i>portfolio</b></i> site? Where are samples of your work?
+#### :question: Is this not a professional <b><i>portfolio</i></b> site? Where are samples of your work?
 This is the second ‒ and very different ‒ iteration of my Hoffman Geospatial website.
 (This one I forked, modified, customized, served, built, and deployed all in Visual Studio Code.)
 <br>Sadly, as of this writing, all that I can access of my other professional website 
@@ -51,7 +52,7 @@ is just this single, barebones <a href="https://web.archive.org/web/202112021833
 
 <br>
 
-#### * How old are you?
+#### :question: How <s>old are you</s> many years have you been alive?
 I can neither confirm nor deny that I was born right around the time Geo. Orwell warned about.
 
 
