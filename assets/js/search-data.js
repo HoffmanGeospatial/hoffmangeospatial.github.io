@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-faq",
           title: "FAQ",
-          description: "Last Updated: 3/06/25",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/faq/";
           },
         },{id: "nav-resumé-cv",
           title: "Resumé/CV",
-          description: "As of February 2025.",
+          description: "Condensed, Formatted",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -109,7 +109,7 @@ ninja.data = [{
           title: 'I was invited by the TOPS team at NASA to join their newly...',
           description: "",
           section: "News",},{id: "news-i-sat-for-and-passed-the-gisci-gisp-technical-professional-certification-exam",
-          title: 'I sat for and passed the GISCI GISP Technical Professional Certification Exam.',
+          title: 'I sat for and passed the GISCI GISP Technical Professional Certification Exam!',
           description: "",
           section: "News",},{id: "news-i-completed-the-nasa-tops-open-science-program",
           title: 'I completed the NASA TOPS Open Science program!',
