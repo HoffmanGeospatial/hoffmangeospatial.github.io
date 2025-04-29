@@ -2,13 +2,13 @@
 layout: page
 title: FAQ
 permalink: /faq/
-description: "Last Updated: 3/06/25"
+description: 
 nav: true
 nav_order: 3
 
 ---
 
-#### :question: How do you account for the gap in your employment? / Why haven't you worked since October?
+<!-- #### :question: How do you account for the gap in your employment? / Why haven't you worked since October?
 <div class="content">
 After making the hard decision to resign from my last position at NC State, I knew I was going to 
 finally allow myself the time and space to recover from what could only be described as 
@@ -23,7 +23,7 @@ grateful and privileged to say I have achieved. The "time out" for rest, recover
 But it has absolutely been worth it.<br>
 I am proud of myself for it, and starting off into another decade refreshed and ready for my next chapters! 
 </div>
-
+</-->
 <br>
 
 <br>

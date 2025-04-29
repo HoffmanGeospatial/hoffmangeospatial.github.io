@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I sat for and passed the GISCI GISP Technical Professional Certification Exam.
+I sat for and passed the GISCI GISP Technical Professional Certification Exam!

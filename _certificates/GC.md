@@ -6,7 +6,7 @@ img: assets/img/NCSU.png
 order: 9
 redirect: false 
 ---
-blah blah blah
+
 
 
 
