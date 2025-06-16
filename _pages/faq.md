@@ -49,9 +49,9 @@ I knew I had landed right where I could thrive... while staying off my feet and 
 
 <br>
 
-#### :question: What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
+<!--  #### :question: What do the initials C.E. stand for in your name? Common Era? Cogito Ergo?
 Yes.
-
+</-->
 <br>
 
 

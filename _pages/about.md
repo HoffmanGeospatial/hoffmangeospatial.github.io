@@ -32,8 +32,7 @@ latest_posts:
 Hello and Welcome! 👋
 <br>
 Thank you for visiting my website, where I hope you will get to learn some things about me as a Geospatial Professional.
-<br>
-My journey has been extraordinarily far from "linear", or traditional/conventional, and I draw a lot strengths-wise from this facet. 
+
 <br>I am proud to be a Geospatial Data Analytics Scientist, having in 2023 earned my Master in Geospatial Information Science and Technology (MGIST) degree from the Center for Geospatial Analytics at North Carolina State University. :globe_with_meridians: :nerd_face:
 <br>
 <p>
