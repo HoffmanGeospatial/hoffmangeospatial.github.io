@@ -4,7 +4,7 @@ permalink: /cv/
 title: Resumé
 nav: true
 nav_order: 5
-cv_pdf: Hoffman_Resumae_082026.pdf # you can also use external links here
+cv_pdf: Hoffman_Resumae_Web_082026.pdf # you can also use external links here
 description: <i> Condensed, Formatted </i>
 toc:
   sidebar: left
