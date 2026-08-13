@@ -10,4 +10,4 @@ toc:
   sidebar: left
 ---
 
-### My Resume HTML page. 
+## My Resume HTML page
