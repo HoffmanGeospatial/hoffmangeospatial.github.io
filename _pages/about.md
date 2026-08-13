@@ -40,7 +40,7 @@ It is "never a dull moment" and that propels me.
 
 Kindly,  
 Dallas  
-Research Triangle, North Carolina, USA  
+![place](/assets/img/placeholder2525.png) Research Triangle, North Carolina, USA  
  
 [hoffmangeospatial@gmx.com](mailto:hoffmangeospatial@gmx.com)
 
