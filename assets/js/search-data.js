@@ -114,6 +114,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-completed-the-nasa-tops-open-science-program",
           title: 'I completed the NASA TOPS Open Science program!',
           description: "",
+          section: "News",},{id: "news-2026-is-proving-to-be-one-of-the-most-challenging-job-markets-for-those-of-us-seeking-a-new-role-1-in-3-job-listings-is-a-quot-ghost-quot-job-fake-scam-etc",
+          title: '2026 is proving to be one of the most challenging job markets for...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
